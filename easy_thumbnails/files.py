@@ -487,7 +487,7 @@ class Thumbnailer(File):
                     thumbnail_file.set_image_dimensions(exists)
                 return thumbnail_file
 
-    def get_thumbnail(self, thumbnail_options, save=True, generate=None,
+    def get_thumbnail(self, thumbnail_options, save=True, generate=True,
                       silent_template_exception=False):
         """
         Return a ``ThumbnailFile`` containing a thumbnail.
